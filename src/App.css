@@ -1,0 +1,39 @@
+html, body {
+  font-family: Helvetica;
+}
+
+.radio-dropdowns-wrapper, .update-results-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.radio-dropdowns-wrapper {
+  height: 15em;
+}
+
+.radio-dropdown-wrapper {
+  cursor: pointer;
+  width: 14em;
+  margin: 2em;
+}
+
+.radio-dropdown-name {
+  font-weight: 700;
+  font-size: 1em;
+  box-shadow: 0 1px 2px 0 silver;
+  padding: 0.5em
+}
+
+.radio-dropdown-header {
+
+}
+
+.selected-dropdown-option-text {
+  font-size: 0.8em;
+}
+
+
+.update-results-wrapper {
+  font-weight: 700;
+  cursor: pointer;
+}
