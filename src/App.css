@@ -1,5 +1,6 @@
 html, body {
   font-family: Helvetica;
+  background-color: rgb(253, 253, 253);
 }
 
 .radio-dropdowns-wrapper, .update-results-wrapper {
@@ -7,21 +8,19 @@ html, body {
   justify-content: center;
 }
 
-.radio-dropdowns-wrapper {
-  height: 15em;
-}
-
 .radio-dropdown-wrapper {
   cursor: pointer;
   width: 14em;
   margin: 2em;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 silver;
 }
 
 .radio-dropdown-name {
   font-weight: 700;
-  font-size: 1em;
+  font-size: 0.9em;
   box-shadow: 0 1px 2px 0 silver;
-  padding: 0.5em
+  padding: 0.5em 1em;
 }
 
 .radio-dropdown-header {
@@ -32,8 +31,40 @@ html, body {
   font-size: 0.8em;
 }
 
-
-.update-results-wrapper {
+.update-results-button {
+  text-align: center;
   font-weight: 700;
+  cursor: pointer;
+  border: 1px solid black;
+  width: 10em;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 50px;
+}
+
+.radio-button {
+  display: flex;
+  justify-content: space-between;
+  height: 2em;
+  align-items: center;
+  font-size: 0.95em;
+  padding: 0.1em 0.5em;
+}
+
+.clear-button {
+  font-size: 0.95em;
+  padding: 0.1em 0.5em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid silver;
+}
+
+.radio-button:hover {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.radio-button label, .radio-button input {
   cursor: pointer;
 }

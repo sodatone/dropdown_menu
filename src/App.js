@@ -71,22 +71,22 @@ class App extends Component {
         options: [
           {
             id: 14,
-            value: "Within Last 14 Days",
+            value: "Last 14 Days",
             selected: false,
           },
           {
             id: 30,
-            value: "Within Last 30 Days",
+            value: "Last 30 Days",
             selected: false,
           },
           {
             id: 60,
-            value: "Within Last 60 Days",
+            value: "Last 60 Days",
             selected: false,
           },
           {
             id: 180,
-            value: "Within Last 180 Days",
+            value: "Last 180 Days",
             selected: false,
           }
         ]
@@ -121,7 +121,7 @@ class App extends Component {
           />
         </div>
 
-        <div className="update-results-wrapper" onClick={this.updateResults.bind(this)}>
+        <div className="update-results-button" onClick={this.updateResults.bind(this)}>
           Update Results
         </div>
       </div>

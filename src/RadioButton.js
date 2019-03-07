@@ -11,17 +11,16 @@ export default class RadioButton extends React.Component {
 
   render() {
     return (
-      <div>
-        <label htmlFor={this.props.id}>
+      <div className="radio-button">
+        <label className="radio-button" htmlFor={this.props.id}>
           {this.props.name}
-          <input
-            id={this.props.id}
-            type="radio"
-            value={this.props.value}
-            name={this.props.checkboxName}
-            onChange={this.handleChange.bind(this, this.props.id)}
-            checked={this.props.selected} />
         </label>
+        <input
+          id={this.props.id}
+          type="radio"
+          value={this.props.value}
+          onChange={this.handleChange.bind(this, this.props.id)}
+          checked={this.props.selected} />
       </div>
     )
   }

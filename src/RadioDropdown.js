@@ -7,7 +7,7 @@ export default class RadioDropdown extends React.Component {
     const options = this.props.options
 
     this.state = { 
-      expanded: false,
+      expanded: true,
       options: options
     }
 
@@ -83,10 +83,9 @@ export default class RadioDropdown extends React.Component {
 
         {this.state.expanded &&
           <div
-            className='spotify-nav-2-multiselect-dropdown-options'
             style={{display: this.state.expanded ? 'block' : 'none' }}>
               {this.getRadioButtons()}
-              <div onClick={this.deselectAll}>
+              <div className="clear-button" onClick={this.deselectAll}>
                 Clear
               </div>
           </div>
