@@ -6,14 +6,13 @@ html, body {
 .radio-dropdowns-wrapper, .update-results-wrapper {
   display: flex;
   justify-content: center;
+  height: 20em;
 }
 
 .radio-dropdown-wrapper {
   cursor: pointer;
   width: 14em;
   margin: 2em;
-  background-color: white;
-  box-shadow: 0 1px 2px 0 silver;
 }
 
 .radio-dropdown-name {
@@ -24,7 +23,13 @@ html, body {
 }
 
 .radio-dropdown-header {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 silver;
+}
 
+.radio-buttons-wrapper {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 silver;
 }
 
 .selected-dropdown-option-text {

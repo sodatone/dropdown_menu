@@ -96,6 +96,7 @@ class App extends Component {
 
   updateResults() {
     // This is where the API call would go, taking all the selections.
+    console.log("Clicked Update Results")
     console.log(this.state.recordLabelCategories)
     console.log(this.state.artistSizeCategories)
     console.log(this.state.releaseDateRange)

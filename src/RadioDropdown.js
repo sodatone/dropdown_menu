@@ -83,6 +83,7 @@ export default class RadioDropdown extends React.Component {
 
         {this.state.expanded &&
           <div
+            className="radio-buttons-wrapper"
             style={{display: this.state.expanded ? 'block' : 'none' }}>
               {this.getRadioButtons()}
               <div className="clear-button" onClick={this.deselectAll}>
